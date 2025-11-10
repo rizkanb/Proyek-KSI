@@ -3,23 +3,32 @@
 namespace Config;
 
 use CodeIgniter\Config\View as BaseView;
-use CodeIgniter\View\ViewDecoratorInterface;
 
 class View extends BaseView
 {
+    /**
+     * Jika diset true, data yang dikirim ke view akan disimpan secara global.
+     */
     public $saveData = true;
 
+    /**
+     * Filter custom untuk view.
+     */
     public $filters = [
-        'upper' => 'strtoupper',
+        'upper' => 'strtoupper', // Contoh filter untuk membuat huruf kapital
     ];
 
+    /**
+     * Plugin custom untuk view.
+     */
     public $plugins = [
-        'datetime' => function ($date, $format = 'Y-m-d H:i:s') {
-            return date($format, strtotime($date));
-        },
+        'datetime' => null, // placeholder, plugin bisa didefinisikan di service/view sendiri
     ];
 
-    public array $decorators = [
+    /**
+     * Daftar decorator untuk view.
+     */
+    public $decorators = [
         // \App\View\Decorators\TrimDecorator::class,
     ];
 }
