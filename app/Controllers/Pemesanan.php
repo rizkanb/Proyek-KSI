@@ -28,7 +28,7 @@ class Pemesanan extends BaseController
      */
     public function index()
     {
-        // Pengecekan Autentikasi Admin
+        // skema 1: perubahan anggota 1
         if (!session()->get('isLoggedIn') || session()->get('level') !== 'admin') {
             return redirect()->to(route_to('login'))->with('error', 'Akses Admin Ditolak.');
         }
@@ -222,4 +222,3 @@ class Pemesanan extends BaseController
         }
     }
 }
-
