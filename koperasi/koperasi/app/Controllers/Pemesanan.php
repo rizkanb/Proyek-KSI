@@ -28,11 +28,7 @@ class Pemesanan extends BaseController
      */
     public function index()
     {
-<<<<<<< HEAD
         // Pengecekan Autentikasi Admin
-=======
-        // skema 1: perubahan anggota 1
->>>>>>> 624d56509a19cd67e2579662cb890c3e56fc4856
         if (!session()->get('isLoggedIn') || session()->get('level') !== 'admin') {
             return redirect()->to(route_to('login'))->with('error', 'Akses Admin Ditolak.');
         }
@@ -225,9 +221,5 @@ class Pemesanan extends BaseController
             return redirect()->to(base_url('dashboard/pemesanan'))->with('error', 'Gagal menghapus pemesanan.');
         }
     }
-<<<<<<< HEAD
 }
 
-=======
-}
->>>>>>> 624d56509a19cd67e2579662cb890c3e56fc4856
