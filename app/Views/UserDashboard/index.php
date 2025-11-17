@@ -9,7 +9,11 @@
             <h1 class="fw-bold text-dark mb-3">Selamat Datang, <?= esc(session()->get('nama') ?? 'Pengguna') ?>!</h1>
             
             <p class="lead text-muted">
+<<<<<<< HEAD
                 Ini adalah halaman dashboard RIZKA NABILLAH AZWA di Koperasi Digital.
+=======
+                Ini adalah halaman dashboard Wulan di Koperasi Digital.
+>>>>>>> beff5d8235860ba5cd30f8e71cdb15f285d1300d
             </p>
             <p>
                 Dari sini Anda dapat mengelola profil Anda, melihat riwayat pembelian, dan membeli produk koperasi.

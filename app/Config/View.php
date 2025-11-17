@@ -3,6 +3,7 @@
 namespace Config;
 
 use CodeIgniter\Config\View as BaseView;
+<<<<<<< HEAD
 use CodeIgniter\View\ViewDecoratorInterface;
 
 /**
@@ -20,10 +21,18 @@ class View extends BaseView
      * set $saveData to true.
      *
      * @var bool
+=======
+
+class View extends BaseView
+{
+    /**
+     * Jika diset true, data yang dikirim ke view akan disimpan secara global.
+>>>>>>> beff5d8235860ba5cd30f8e71cdb15f285d1300d
      */
     public $saveData = true;
 
     /**
+<<<<<<< HEAD
      * Parser Filters map a filter name with any PHP callable. When the
      * Parser prepares a variable for display, it will chain it
      * through the filters in the order defined, inserting any parameters.
@@ -59,4 +68,25 @@ class View extends BaseView
      * @var list<class-string<ViewDecoratorInterface>>
      */
     public array $decorators = [];
+=======
+     * Filter custom untuk view.
+     */
+    public $filters = [
+        'upper' => 'strtoupper', // Contoh filter untuk membuat huruf kapital
+    ];
+
+    /**
+     * Plugin custom untuk view.
+     */
+    public $plugins = [
+        'datetime' => null, // placeholder, plugin bisa didefinisikan di service/view sendiri
+    ];
+
+    /**
+     * Daftar decorator untuk view.
+     */
+    public $decorators = [
+        // \App\View\Decorators\TrimDecorator::class,
+    ];
+>>>>>>> beff5d8235860ba5cd30f8e71cdb15f285d1300d
 }

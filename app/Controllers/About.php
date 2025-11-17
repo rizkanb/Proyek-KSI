@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 
 class About extends BaseController
 {
+<<<<<<< HEAD
     /**
      * Menampilkan halaman "Tentang Kami"
      */
@@ -25,6 +26,11 @@ class About extends BaseController
         ];
 
         // Tampilkan view dengan data
+=======
+    public function index()
+    {
+        $data['title'] = 'Tentang Kami';
+>>>>>>> beff5d8235860ba5cd30f8e71cdb15f285d1300d
         return view('about_view', $data);
     }
 }

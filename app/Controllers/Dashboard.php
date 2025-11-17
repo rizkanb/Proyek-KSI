@@ -6,6 +6,7 @@ use App\Controllers\BaseController;
 class Dashboard extends BaseController
 {
     /**
+<<<<<<< HEAD
      * Menampilkan halaman utama dasbor admin koperasi.
      */
     public function index()
@@ -27,5 +28,24 @@ class Dashboard extends BaseController
 
         // Tampilkan tampilan utama dashboard
         return view('admin/index', $data);
+=======
+     * Menampilkan halaman utama dasbor admin.
+     */
+    public function index()
+    {
+        // Pengecekan autentikasi dan level admin
+        if (!session()->get('isLoggedIn') || session()->get('level') !== 'admin') {
+            return redirect()->to(route_to('login'))->with('error', 'Akses Admin Ditolak. Silakan Login.');
+        }
+
+        $data = [
+            'title' => 'Dashboard Utama Admin - KOPERASI',
+            'content_title' => 'Halo, Selamat Datang di Dashboard Admin!',
+            // Data untuk di passing ke view
+        ];
+
+        // *** PERBAIKAN INTI: Memanggil view admin/index.php ***
+        return view('admin/index', $data); 
+>>>>>>> beff5d8235860ba5cd30f8e71cdb15f285d1300d
     }
 }
