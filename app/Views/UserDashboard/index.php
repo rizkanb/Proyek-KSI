@@ -6,11 +6,14 @@
     <div class="card shadow-sm border-0" style="border-radius: 12px;">
         <div class="card-body p-4 p-md-5">
 
-            <h1 class="fw-bold text-dark mb-3">Selamat Datang, <?= esc(session()->get('nama') ?? 'Pengguna') ?>!</h1>
+            <h1 class="fw-bold text-dark mb-3">
+                Selamat Datang, <?= esc(session()->get('nama') ?? 'Pengguna') ?>!
+            </h1>
             
             <p class="lead text-muted">
-                Ini adalah halaman dashboard rizka123 di Koperasi Digital.
+                Ini adalah halaman dashboard <b>Rizka Nabillah Azwa</b> di Koperasi Digital.
             </p>
+
             <p>
                 Dari sini Anda dapat mengelola profil Anda, melihat riwayat pembelian, dan membeli produk koperasi.
             </p>
@@ -19,6 +22,7 @@
 
             <h4 class="fw-bold text-dark mb-3">Menu Cepat</h4>
             <div class="row g-3">
+                
                 <div class="col-md-4">
                     <a href="<?= route_to('user_buy') ?>" class="text-decoration-none">
                         <div class="card text-center h-100 p-3 card-hover shadow-sm">
@@ -27,6 +31,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-md-4">
                     <a href="<?= route_to('user_history') ?>" class="text-decoration-none">
                         <div class="card text-center h-100 p-3 card-hover shadow-sm">
@@ -35,6 +40,7 @@
                         </div>
                     </a>
                 </div>
+
                 <div class="col-md-4">
                     <a href="<?= route_to('user_profile') ?>" class="text-decoration-none">
                         <div class="card text-center h-100 p-3 card-hover shadow-sm">
@@ -43,6 +49,7 @@
                         </div>
                     </a>
                 </div>
+
             </div>
 
         </div>
@@ -50,4 +57,3 @@
 </div>
 
 <?php $this->endSection() // <-- Mengakhiri konten ?>
-
