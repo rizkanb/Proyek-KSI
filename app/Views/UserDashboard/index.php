@@ -32,7 +32,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-4"> ini punya rizka nabillah azwa
                     <a href="<?= route_to('user_history') ?>" class="text-decoration-none">
                         <div class="card text-center h-100 p-3 card-hover shadow-sm">
                             <i class="fas fa-history fa-3x text-success mb-3"></i>
