@@ -9,7 +9,7 @@
             <h1 class="fw-bold text-dark mb-3">Selamat Datang, <?= esc(session()->get('nama') ?? 'Pengguna') ?>!</h1>
             
             <p class="lead text-muted">
-                Ini adalah halaman dashboard Anda di Koperasi Digital.
+                Ini adalah halaman dashboard Wulan di Koperasi Digital.
             </p>
             <p>
                 Dari sini Anda dapat mengelola profil Anda, melihat riwayat pembelian, dan membeli produk koperasi.
