@@ -7,14 +7,18 @@
         <div class="card-body p-4 p-md-5">
 
             <h1 class="fw-bold text-dark mb-3">Selamat Datang, <?= esc(session()->get('nama') ?? 'Pengguna') ?>!</h1>
-            
+
             <p class="lead text-muted">
-                Ini adalah halaman dashboard Pembaharuan Mawan MAhmud
+                Ini adalah halaman dashboard Pembaharuan Mawan Mahmud
             </p>
             <p>
                 Dari sini Anda dapat mengelola profil Anda, melihat riwayat pembelian, dan membeli produk koperasi.
             </p>
-            
+
+            <!-- START SKEMA 2: PENAMBAHAN BARIS BARU -->
+            <p class="mt-4">Selamat Bekerja, Mawan! Selamat Berkreasi!</p>
+            <!-- END SKEMA 2 -->
+
             <hr class="my-4">
 
             <h4 class="fw-bold text-dark mb-3">Menu Cepat</h4>
@@ -50,4 +54,3 @@
 </div>
 
 <?php $this->endSection() // <-- Mengakhiri konten ?>
-
